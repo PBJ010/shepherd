@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">891331476937-u1p3crng6bkgr705om552d01i01t9rfh.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">891331476937</string>
+    <string name="google_api_key" translatable="false">AIzaSyC6-8zfB2OA2NMfTqkZ4xRH2qFFJ5IjldM</string>
+    <string name="google_app_id" translatable="false">1:891331476937:android:61d6bd77d7912049d23c18</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC6-8zfB2OA2NMfTqkZ4xRH2qFFJ5IjldM</string>
+    <string name="google_storage_bucket" translatable="false">com-health-shepherd.appspot.com</string>
+    <string name="project_id" translatable="false">com-health-shepherd</string>
+</resources>

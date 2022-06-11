@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/Users/parkbyeongjun/StudioProjects/shepherd/build/audio_session/intermediates/res/merged/release/drawable-mdpi-v4/notification_bg_normal.9.png",
+        "source": "/Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/14b93615368c2249f1830e26ca064ab5/core-1.6.0/res/drawable-mdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/Users/parkbyeongjun/StudioProjects/shepherd/build/audio_session/intermediates/res/merged/release/drawable-mdpi-v4/notification_bg_low_pressed.9.png",
+        "source": "/Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/14b93615368c2249f1830e26ca064ab5/core-1.6.0/res/drawable-mdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/Users/parkbyeongjun/StudioProjects/shepherd/build/audio_session/intermediates/res/merged/release/drawable-mdpi-v4/media_session_service_notification_ic_music_note.png",
+        "source": "/Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/43dfece96c0db0d1b2049b3d985a5852/jetified-media2-session-1.2.0/res/drawable-mdpi-v4/media_session_service_notification_ic_music_note.png"
+    },
+    {
+        "merged": "/Users/parkbyeongjun/StudioProjects/shepherd/build/audio_session/intermediates/res/merged/release/drawable-mdpi-v4/media_session_service_notification_ic_play.png",
+        "source": "/Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/43dfece96c0db0d1b2049b3d985a5852/jetified-media2-session-1.2.0/res/drawable-mdpi-v4/media_session_service_notification_ic_play.png"
+    },
+    {
+        "merged": "/Users/parkbyeongjun/StudioProjects/shepherd/build/audio_session/intermediates/res/merged/release/drawable-mdpi-v4/media_session_service_notification_ic_skip_to_next.png",
+        "source": "/Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/43dfece96c0db0d1b2049b3d985a5852/jetified-media2-session-1.2.0/res/drawable-mdpi-v4/media_session_service_notification_ic_skip_to_next.png"
+    },
+    {
+        "merged": "/Users/parkbyeongjun/StudioProjects/shepherd/build/audio_session/intermediates/res/merged/release/drawable-mdpi-v4/media_session_service_notification_ic_pause.png",
+        "source": "/Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/43dfece96c0db0d1b2049b3d985a5852/jetified-media2-session-1.2.0/res/drawable-mdpi-v4/media_session_service_notification_ic_pause.png"
+    },
+    {
+        "merged": "/Users/parkbyeongjun/StudioProjects/shepherd/build/audio_session/intermediates/res/merged/release/drawable-mdpi-v4/notification_bg_normal_pressed.9.png",
+        "source": "/Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/14b93615368c2249f1830e26ca064ab5/core-1.6.0/res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/Users/parkbyeongjun/StudioProjects/shepherd/build/audio_session/intermediates/res/merged/release/drawable-mdpi-v4/notify_panel_notification_icon_bg.png",
+        "source": "/Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/14b93615368c2249f1830e26ca064ab5/core-1.6.0/res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/Users/parkbyeongjun/StudioProjects/shepherd/build/audio_session/intermediates/res/merged/release/drawable-mdpi-v4/media_session_service_notification_ic_skip_to_previous.png",
+        "source": "/Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/43dfece96c0db0d1b2049b3d985a5852/jetified-media2-session-1.2.0/res/drawable-mdpi-v4/media_session_service_notification_ic_skip_to_previous.png"
+    },
+    {
+        "merged": "/Users/parkbyeongjun/StudioProjects/shepherd/build/audio_session/intermediates/res/merged/release/drawable-mdpi-v4/notification_bg_low_normal.9.png",
+        "source": "/Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/14b93615368c2249f1830e26ca064ab5/core-1.6.0/res/drawable-mdpi-v4/notification_bg_low_normal.9.png"
+    }
+]

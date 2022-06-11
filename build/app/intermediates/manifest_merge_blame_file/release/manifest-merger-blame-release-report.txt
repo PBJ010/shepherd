@@ -1,0 +1,607 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.pbj010dev.shepherd"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:3:5-66
+11-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:3:22-64
+12    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+12-->[:flutter_local_notifications] /Users/parkbyeongjun/StudioProjects/shepherd/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:7:5-81
+12-->[:flutter_local_notifications] /Users/parkbyeongjun/StudioProjects/shepherd/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:7:22-78
+13    <uses-permission android:name="android.permission.VIBRATE" />
+13-->[:flutter_local_notifications] /Users/parkbyeongjun/StudioProjects/shepherd/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:8:5-66
+13-->[:flutter_local_notifications] /Users/parkbyeongjun/StudioProjects/shepherd/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:8:22-63
+14    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+14-->[:flutter_local_notifications] /Users/parkbyeongjun/StudioProjects/shepherd/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:9:5-81
+14-->[:flutter_local_notifications] /Users/parkbyeongjun/StudioProjects/shepherd/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:9:22-78
+15    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+15-->[:flutter_local_notifications] /Users/parkbyeongjun/StudioProjects/shepherd/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:10:5-79
+15-->[:flutter_local_notifications] /Users/parkbyeongjun/StudioProjects/shepherd/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:10:22-76
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->[com.google.firebase:firebase-auth:21.0.4] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/f3075ca5717f5a7e0f1da18bb60d0196/jetified-firebase-auth-21.0.4/AndroidManifest.xml:24:5-79
+16-->[com.google.firebase:firebase-auth:21.0.4] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/f3075ca5717f5a7e0f1da18bb60d0196/jetified-firebase-auth-21.0.4/AndroidManifest.xml:24:22-76
+17
+18    <queries>
+18-->[androidx.media2:media2-session:1.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/43dfece96c0db0d1b2049b3d985a5852/jetified-media2-session-1.2.0/AndroidManifest.xml:24:5-34:15
+19        <intent>
+19-->[androidx.media2:media2-session:1.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/43dfece96c0db0d1b2049b3d985a5852/jetified-media2-session-1.2.0/AndroidManifest.xml:25:9-27:18
+20            <action android:name="android.media.browse.MediaBrowserService" />
+20-->[androidx.media2:media2-session:1.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/43dfece96c0db0d1b2049b3d985a5852/jetified-media2-session-1.2.0/AndroidManifest.xml:26:13-79
+20-->[androidx.media2:media2-session:1.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/43dfece96c0db0d1b2049b3d985a5852/jetified-media2-session-1.2.0/AndroidManifest.xml:26:21-76
+21        </intent>
+22        <intent>
+22-->[androidx.media2:media2-session:1.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/43dfece96c0db0d1b2049b3d985a5852/jetified-media2-session-1.2.0/AndroidManifest.xml:28:9-30:18
+23            <action android:name="androidx.media2.session.MediaSessionService" />
+23-->[androidx.media2:media2-session:1.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/43dfece96c0db0d1b2049b3d985a5852/jetified-media2-session-1.2.0/AndroidManifest.xml:29:13-82
+23-->[androidx.media2:media2-session:1.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/43dfece96c0db0d1b2049b3d985a5852/jetified-media2-session-1.2.0/AndroidManifest.xml:29:21-79
+24        </intent>
+25        <intent>
+25-->[androidx.media2:media2-session:1.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/43dfece96c0db0d1b2049b3d985a5852/jetified-media2-session-1.2.0/AndroidManifest.xml:31:9-33:18
+26            <action android:name="androidx.media2.session.MediaLibraryService" />
+26-->[androidx.media2:media2-session:1.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/43dfece96c0db0d1b2049b3d985a5852/jetified-media2-session-1.2.0/AndroidManifest.xml:32:13-82
+26-->[androidx.media2:media2-session:1.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/43dfece96c0db0d1b2049b3d985a5852/jetified-media2-session-1.2.0/AndroidManifest.xml:32:21-79
+27        </intent>
+28    </queries>
+29
+30    <uses-permission android:name="android.permission.WAKE_LOCK" />
+30-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/1cd6b35bba78aa82ebfb4f3fdea2085f/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:24:5-68
+30-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/1cd6b35bba78aa82ebfb4f3fdea2085f/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:24:22-65
+31    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+31-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/1cd6b35bba78aa82ebfb4f3fdea2085f/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:25:5-79
+31-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/1cd6b35bba78aa82ebfb4f3fdea2085f/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:25:22-76
+32    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+32-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/3b1d1e5571522f703c316a9309413648/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:26:5-110
+32-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/3b1d1e5571522f703c316a9309413648/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:26:22-107
+33
+34    <application
+35        android:name="android.app.Application"
+35-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:6:9-42
+36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+36-->[androidx.core:core:1.7.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/3f6d9ef3b65bfee01861f2e5d3bab0bd/core-1.7.0/AndroidManifest.xml:24:18-86
+37        android:icon="@mipmap/ic_launcher"
+37-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:8:9-43
+38        android:label="shepherd"
+38-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:5:9-33
+39        android:supportsRtl="true"
+39-->[com.facebook.android:facebook-login:13.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/99a222ba3be8e30bd834c60eb424bdc0/jetified-facebook-login-13.2.0/AndroidManifest.xml:28:18-44
+40        android:usesCleartextTraffic="true" >
+40-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:7:9-44
+41        <activity
+41-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:9:9-33:20
+42            android:name="com.pbj010dev.shepherd.MainActivity"
+42-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:10:13-41
+43            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+43-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:14:13-163
+44            android:exported="true"
+44-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:11:13-36
+45            android:hardwareAccelerated="true"
+45-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:15:13-47
+46            android:launchMode="singleTop"
+46-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:12:13-43
+47            android:showWhenLocked="true"
+47-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:17:13-42
+48            android:theme="@style/LaunchTheme"
+48-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:13:13-47
+49            android:turnScreenOn="true"
+49-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:18:13-40
+50            android:windowSoftInputMode="adjustResize" >
+50-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:16:13-55
+51
+52            <!--
+53                 Specifies an Android theme to apply to this Activity as soon as
+54                 the Android process has started. This theme is visible to the user
+55                 while the Flutter UI initializes. After that, this theme continues
+56                 to determine the Window background behind the Flutter UI.
+57            -->
+58            <meta-data
+58-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:23:13-26:17
+59                android:name="io.flutter.embedding.android.NormalTheme"
+59-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:24:15-70
+60                android:resource="@style/NormalTheme" />
+60-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:25:15-52
+61            <meta-data
+61-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:27:13-111
+62                android:name="com.facebook.sdk.ApplicationId"
+62-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:27:24-69
+63                android:value="@string/facebook_app_id" />
+63-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:27:70-109
+64            <meta-data
+64-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:28:13-115
+65                android:name="com.facebook.sdk.ClientToken"
+65-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:28:24-67
+66                android:value="@string/facebook_client_token" />
+66-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:28:68-113
+67
+68            <intent-filter>
+68-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:29:13-32:29
+69                <action android:name="android.intent.action.MAIN" />
+69-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:30:17-68
+69-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:30:25-66
+70
+71                <category android:name="android.intent.category.LAUNCHER" />
+71-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:31:17-76
+71-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:31:27-74
+72            </intent-filter>
+73        </activity>
+74        <!--
+75             Don't delete the meta-data below.
+76             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+77        -->
+78        <activity
+78-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:36:8-39:47
+79            android:name="com.facebook.FacebookActivity"
+79-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:36:18-62
+80            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+80-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:37:12-111
+81            android:label="@string/app_name"
+81-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:39:12-44
+82            android:theme="@style/com_facebook_activity_theme" />
+82-->[com.facebook.android:facebook-common:13.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/93734b7b397a430db9b9c833c1d1c7fa/jetified-facebook-common-13.2.0/AndroidManifest.xml:33:13-63
+83        <activity
+83-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:40:8-49:19
+84            android:name="com.facebook.CustomTabActivity"
+84-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:41:12-57
+85            android:exported="true" >
+85-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:42:12-35
+86            <intent-filter>
+86-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:43:12-48:28
+87                <action android:name="android.intent.action.VIEW" />
+87-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:44:16-68
+87-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:44:24-65
+88
+89                <category android:name="android.intent.category.DEFAULT" />
+89-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:45:16-75
+89-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:45:26-72
+90                <category android:name="android.intent.category.BROWSABLE" />
+90-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:46:16-77
+90-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:46:26-74
+91
+92                <data android:scheme="@string/fb_login_protocol_scheme" />
+92-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:47:16-74
+92-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:47:22-71
+93            </intent-filter>
+94            <intent-filter>
+94-->[com.facebook.android:facebook-common:13.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/93734b7b397a430db9b9c833c1d1c7fa/jetified-facebook-common-13.2.0/AndroidManifest.xml:39:13-48:29
+95                <action android:name="android.intent.action.VIEW" />
+95-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:44:16-68
+95-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:44:24-65
+96
+97                <category android:name="android.intent.category.DEFAULT" />
+97-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:45:16-75
+97-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:45:26-72
+98                <category android:name="android.intent.category.BROWSABLE" />
+98-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:46:16-77
+98-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:46:26-74
+99
+100                <data
+100-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:47:16-74
+101                    android:host="cct.com.pbj010dev.shepherd"
+102                    android:scheme="fbconnect" />
+102-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:47:22-71
+103            </intent-filter>
+104        </activity>
+105        <activity
+105-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:51:8-54:70
+106            android:name="com.yalantis.ucrop.UCropActivity"
+106-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:52:12-59
+107            android:screenOrientation="portrait"
+107-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:53:12-48
+108            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+108-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:54:12-68
+109        <activity
+109-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:55:8-67:19
+110            android:name="com.aboutyou.dart_packages.sign_in_with_apple.SignInWithAppleCallback"
+110-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:56:12-96
+111            android:exported="true" >
+111-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:57:12-35
+112            <intent-filter>
+112-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:59:12-66:28
+113                <action android:name="android.intent.action.VIEW" />
+113-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:44:16-68
+113-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:44:24-65
+114
+115                <category android:name="android.intent.category.DEFAULT" />
+115-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:45:16-75
+115-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:45:26-72
+116                <category android:name="android.intent.category.BROWSABLE" />
+116-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:46:16-77
+116-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:46:26-74
+117
+118                <data android:scheme="signinwithapple" />
+118-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:47:16-74
+118-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:47:22-71
+119                <data android:path="callback" />
+119-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:47:16-74
+119-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:65:22-45
+120            </intent-filter>
+121        </activity>
+122        <activity android:name="com.linusu.flutter_web_auth.CallbackActivity" >
+122-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:68:8-75:19
+122-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:68:18-77
+123            <intent-filter android:label="flutter_web_auth" >
+123-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:69:12-74:28
+123-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:69:27-59
+124                <action android:name="android.intent.action.VIEW" />
+124-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:44:16-68
+124-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:44:24-65
+125
+126                <category android:name="android.intent.category.DEFAULT" />
+126-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:45:16-75
+126-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:45:26-72
+127                <category android:name="android.intent.category.BROWSABLE" />
+127-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:46:16-77
+127-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:46:26-74
+128
+129                <data android:scheme="webauthcallback" />
+129-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:47:16-74
+129-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:47:22-71
+130            </intent-filter>
+131        </activity>
+132
+133        <meta-data
+133-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:76:9-78:33
+134            android:name="flutterEmbedding"
+134-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:77:13-44
+135            android:value="2" />
+135-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:78:13-30
+136
+137        <service
+137-->[:cloud_firestore] /Users/parkbyeongjun/StudioProjects/shepherd/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:8:9-12:19
+138            android:name="com.google.firebase.components.ComponentDiscoveryService"
+138-->[:cloud_firestore] /Users/parkbyeongjun/StudioProjects/shepherd/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:8:18-89
+139            android:directBootAware="true"
+139-->[com.google.firebase:firebase-common:20.1.1] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/0f67b2d2737c37bf1274c8f8df4996b1/jetified-firebase-common-20.1.1/AndroidManifest.xml:35:13-43
+140            android:exported="false" >
+140-->[com.google.firebase:firebase-auth:21.0.4] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/f3075ca5717f5a7e0f1da18bb60d0196/jetified-firebase-auth-21.0.4/AndroidManifest.xml:66:13-37
+141            <meta-data
+141-->[:cloud_firestore] /Users/parkbyeongjun/StudioProjects/shepherd/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
+142                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+142-->[:cloud_firestore] /Users/parkbyeongjun/StudioProjects/shepherd/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:10:17-134
+143                android:value="com.google.firebase.components.ComponentRegistrar" />
+143-->[:cloud_firestore] /Users/parkbyeongjun/StudioProjects/shepherd/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:11:17-82
+144            <meta-data
+144-->[:firebase_auth] /Users/parkbyeongjun/StudioProjects/shepherd/build/firebase_auth/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
+145                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+145-->[:firebase_auth] /Users/parkbyeongjun/StudioProjects/shepherd/build/firebase_auth/intermediates/library_manifest/release/AndroidManifest.xml:10:17-124
+146                android:value="com.google.firebase.components.ComponentRegistrar" />
+146-->[:firebase_auth] /Users/parkbyeongjun/StudioProjects/shepherd/build/firebase_auth/intermediates/library_manifest/release/AndroidManifest.xml:11:17-82
+147            <meta-data
+147-->[:firebase_storage] /Users/parkbyeongjun/StudioProjects/shepherd/build/firebase_storage/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
+148                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+148-->[:firebase_storage] /Users/parkbyeongjun/StudioProjects/shepherd/build/firebase_storage/intermediates/library_manifest/release/AndroidManifest.xml:10:17-126
+149                android:value="com.google.firebase.components.ComponentRegistrar" />
+149-->[:firebase_storage] /Users/parkbyeongjun/StudioProjects/shepherd/build/firebase_storage/intermediates/library_manifest/release/AndroidManifest.xml:11:17-82
+150            <meta-data
+150-->[:firebase_core] /Users/parkbyeongjun/StudioProjects/shepherd/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
+151                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+151-->[:firebase_core] /Users/parkbyeongjun/StudioProjects/shepherd/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:10:17-124
+152                android:value="com.google.firebase.components.ComponentRegistrar" />
+152-->[:firebase_core] /Users/parkbyeongjun/StudioProjects/shepherd/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:11:17-82
+153            <meta-data
+153-->[com.google.firebase:firebase-auth:21.0.4] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/f3075ca5717f5a7e0f1da18bb60d0196/jetified-firebase-auth-21.0.4/AndroidManifest.xml:67:13-69:85
+154                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+154-->[com.google.firebase:firebase-auth:21.0.4] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/f3075ca5717f5a7e0f1da18bb60d0196/jetified-firebase-auth-21.0.4/AndroidManifest.xml:68:17-109
+155                android:value="com.google.firebase.components.ComponentRegistrar" />
+155-->[com.google.firebase:firebase-auth:21.0.4] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/f3075ca5717f5a7e0f1da18bb60d0196/jetified-firebase-auth-21.0.4/AndroidManifest.xml:69:17-82
+156            <meta-data
+156-->[com.google.firebase:firebase-firestore:24.1.2] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/f5bbed170b360fd19b200a85558d3766/jetified-firebase-firestore-24.1.2/AndroidManifest.xml:20:13-22:85
+157                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+157-->[com.google.firebase:firebase-firestore:24.1.2] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/f5bbed170b360fd19b200a85558d3766/jetified-firebase-firestore-24.1.2/AndroidManifest.xml:21:17-111
+158                android:value="com.google.firebase.components.ComponentRegistrar" />
+158-->[com.google.firebase:firebase-firestore:24.1.2] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/f5bbed170b360fd19b200a85558d3766/jetified-firebase-firestore-24.1.2/AndroidManifest.xml:22:17-82
+159            <meta-data
+159-->[com.google.firebase:firebase-storage:20.0.1] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/a732609d39140ed999dd3f02f1a8340e/jetified-firebase-storage-20.0.1/AndroidManifest.xml:33:13-35:85
+160                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+160-->[com.google.firebase:firebase-storage:20.0.1] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/a732609d39140ed999dd3f02f1a8340e/jetified-firebase-storage-20.0.1/AndroidManifest.xml:34:17-107
+161                android:value="com.google.firebase.components.ComponentRegistrar" />
+161-->[com.google.firebase:firebase-storage:20.0.1] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/a732609d39140ed999dd3f02f1a8340e/jetified-firebase-storage-20.0.1/AndroidManifest.xml:35:17-82
+162            <meta-data
+162-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/1cd6b35bba78aa82ebfb4f3fdea2085f/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:31:13-33:85
+163                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+163-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/1cd6b35bba78aa82ebfb4f3fdea2085f/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:32:17-139
+164                android:value="com.google.firebase.components.ComponentRegistrar" />
+164-->[com.google.android.gms:play-services-measurement-api:21.0.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/1cd6b35bba78aa82ebfb4f3fdea2085f/jetified-play-services-measurement-api-21.0.0/AndroidManifest.xml:33:17-82
+165            <meta-data
+165-->[com.google.firebase:firebase-installations:17.0.1] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/5c0bcaf225cb7771e65a14163b1c7474/jetified-firebase-installations-17.0.1/AndroidManifest.xml:18:13-20:85
+166                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+166-->[com.google.firebase:firebase-installations:17.0.1] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/5c0bcaf225cb7771e65a14163b1c7474/jetified-firebase-installations-17.0.1/AndroidManifest.xml:19:17-127
+167                android:value="com.google.firebase.components.ComponentRegistrar" />
+167-->[com.google.firebase:firebase-installations:17.0.1] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/5c0bcaf225cb7771e65a14163b1c7474/jetified-firebase-installations-17.0.1/AndroidManifest.xml:20:17-82
+168        </service>
+169
+170        <provider
+170-->[:image_picker] /Users/parkbyeongjun/StudioProjects/shepherd/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:8:9-16:20
+171            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+171-->[:image_picker] /Users/parkbyeongjun/StudioProjects/shepherd/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:9:13-82
+172            android:authorities="com.pbj010dev.shepherd.flutter.image_provider"
+172-->[:image_picker] /Users/parkbyeongjun/StudioProjects/shepherd/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:10:13-74
+173            android:exported="false"
+173-->[:image_picker] /Users/parkbyeongjun/StudioProjects/shepherd/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:11:13-37
+174            android:grantUriPermissions="true" >
+174-->[:image_picker] /Users/parkbyeongjun/StudioProjects/shepherd/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:12:13-47
+175            <meta-data
+175-->[:image_picker] /Users/parkbyeongjun/StudioProjects/shepherd/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:13:13-15:75
+176                android:name="android.support.FILE_PROVIDER_PATHS"
+176-->[:image_picker] /Users/parkbyeongjun/StudioProjects/shepherd/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:14:17-67
+177                android:resource="@xml/flutter_image_picker_file_paths" />
+177-->[:image_picker] /Users/parkbyeongjun/StudioProjects/shepherd/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:15:17-72
+178        </provider>
+179
+180        <receiver
+180-->[:flutter_local_notifications] /Users/parkbyeongjun/StudioProjects/shepherd/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:13:9-15:40
+181            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+181-->[:flutter_local_notifications] /Users/parkbyeongjun/StudioProjects/shepherd/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:14:13-97
+182            android:exported="false" />
+182-->[:flutter_local_notifications] /Users/parkbyeongjun/StudioProjects/shepherd/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:15:13-37
+183        <receiver
+183-->[:flutter_local_notifications] /Users/parkbyeongjun/StudioProjects/shepherd/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:16:9-25:20
+184            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+184-->[:flutter_local_notifications] /Users/parkbyeongjun/StudioProjects/shepherd/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:17:13-101
+185            android:exported="false" >
+185-->[:flutter_local_notifications] /Users/parkbyeongjun/StudioProjects/shepherd/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:18:13-37
+186            <intent-filter>
+186-->[:flutter_local_notifications] /Users/parkbyeongjun/StudioProjects/shepherd/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:19:13-24:29
+187                <action android:name="android.intent.action.BOOT_COMPLETED" />
+187-->[:flutter_local_notifications] /Users/parkbyeongjun/StudioProjects/shepherd/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:20:17-79
+187-->[:flutter_local_notifications] /Users/parkbyeongjun/StudioProjects/shepherd/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:20:25-76
+188                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+188-->[:flutter_local_notifications] /Users/parkbyeongjun/StudioProjects/shepherd/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:21:17-84
+188-->[:flutter_local_notifications] /Users/parkbyeongjun/StudioProjects/shepherd/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:21:25-81
+189                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+189-->[:flutter_local_notifications] /Users/parkbyeongjun/StudioProjects/shepherd/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:22:17-82
+189-->[:flutter_local_notifications] /Users/parkbyeongjun/StudioProjects/shepherd/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:22:25-79
+190                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+190-->[:flutter_local_notifications] /Users/parkbyeongjun/StudioProjects/shepherd/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:23:17-82
+190-->[:flutter_local_notifications] /Users/parkbyeongjun/StudioProjects/shepherd/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:23:25-79
+191            </intent-filter>
+192        </receiver>
+193
+194        <activity
+194-->[:url_launcher_android] /Users/parkbyeongjun/StudioProjects/shepherd/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:8:9-11:74
+195            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+195-->[:url_launcher_android] /Users/parkbyeongjun/StudioProjects/shepherd/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:9:13-74
+196            android:exported="false"
+196-->[:url_launcher_android] /Users/parkbyeongjun/StudioProjects/shepherd/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:10:13-37
+197            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+197-->[:url_launcher_android] /Users/parkbyeongjun/StudioProjects/shepherd/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:11:13-71
+198
+199        <provider
+199-->[:share] /Users/parkbyeongjun/StudioProjects/shepherd/build/share/intermediates/library_manifest/release/AndroidManifest.xml:8:9-16:20
+200            android:name="io.flutter.plugins.share.ShareFileProvider"
+200-->[:share] /Users/parkbyeongjun/StudioProjects/shepherd/build/share/intermediates/library_manifest/release/AndroidManifest.xml:9:13-70
+201            android:authorities="com.pbj010dev.shepherd.flutter.share_provider"
+201-->[:share] /Users/parkbyeongjun/StudioProjects/shepherd/build/share/intermediates/library_manifest/release/AndroidManifest.xml:10:13-74
+202            android:exported="false"
+202-->[:share] /Users/parkbyeongjun/StudioProjects/shepherd/build/share/intermediates/library_manifest/release/AndroidManifest.xml:11:13-37
+203            android:grantUriPermissions="true" >
+203-->[:share] /Users/parkbyeongjun/StudioProjects/shepherd/build/share/intermediates/library_manifest/release/AndroidManifest.xml:12:13-47
+204            <meta-data
+204-->[:image_picker] /Users/parkbyeongjun/StudioProjects/shepherd/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:13:13-15:75
+205                android:name="android.support.FILE_PROVIDER_PATHS"
+205-->[:image_picker] /Users/parkbyeongjun/StudioProjects/shepherd/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:14:17-67
+206                android:resource="@xml/flutter_share_file_paths" />
+206-->[:image_picker] /Users/parkbyeongjun/StudioProjects/shepherd/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:15:17-72
+207        </provider>
+208
+209        <uses-library
+209-->[androidx.window:window:1.0.0-beta04] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+210            android:name="androidx.window.extensions"
+210-->[androidx.window:window:1.0.0-beta04] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+211            android:required="false" />
+211-->[androidx.window:window:1.0.0-beta04] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+212        <uses-library
+212-->[androidx.window:window:1.0.0-beta04] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+213            android:name="androidx.window.sidecar"
+213-->[androidx.window:window:1.0.0-beta04] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+214            android:required="false" />
+214-->[androidx.window:window:1.0.0-beta04] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+215
+216        <activity
+216-->[com.google.firebase:firebase-auth:21.0.4] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/f3075ca5717f5a7e0f1da18bb60d0196/jetified-firebase-auth-21.0.4/AndroidManifest.xml:27:9-44:20
+217            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+217-->[com.google.firebase:firebase-auth:21.0.4] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/f3075ca5717f5a7e0f1da18bb60d0196/jetified-firebase-auth-21.0.4/AndroidManifest.xml:28:13-80
+218            android:excludeFromRecents="true"
+218-->[com.google.firebase:firebase-auth:21.0.4] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/f3075ca5717f5a7e0f1da18bb60d0196/jetified-firebase-auth-21.0.4/AndroidManifest.xml:29:13-46
+219            android:exported="true"
+219-->[com.google.firebase:firebase-auth:21.0.4] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/f3075ca5717f5a7e0f1da18bb60d0196/jetified-firebase-auth-21.0.4/AndroidManifest.xml:30:13-36
+220            android:launchMode="singleTask"
+220-->[com.google.firebase:firebase-auth:21.0.4] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/f3075ca5717f5a7e0f1da18bb60d0196/jetified-firebase-auth-21.0.4/AndroidManifest.xml:31:13-44
+221            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+221-->[com.google.firebase:firebase-auth:21.0.4] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/f3075ca5717f5a7e0f1da18bb60d0196/jetified-firebase-auth-21.0.4/AndroidManifest.xml:32:13-72
+222            <intent-filter>
+222-->[com.google.firebase:firebase-auth:21.0.4] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/f3075ca5717f5a7e0f1da18bb60d0196/jetified-firebase-auth-21.0.4/AndroidManifest.xml:33:13-43:29
+223                <action android:name="android.intent.action.VIEW" />
+223-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:44:16-68
+223-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:44:24-65
+224
+225                <category android:name="android.intent.category.DEFAULT" />
+225-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:45:16-75
+225-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:45:26-72
+226                <category android:name="android.intent.category.BROWSABLE" />
+226-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:46:16-77
+226-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:46:26-74
+227
+228                <data
+228-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:47:16-74
+229                    android:host="firebase.auth"
+230                    android:path="/"
+230-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:65:22-45
+231                    android:scheme="genericidp" />
+231-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:47:22-71
+232            </intent-filter>
+233        </activity>
+234        <activity
+234-->[com.google.firebase:firebase-auth:21.0.4] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/f3075ca5717f5a7e0f1da18bb60d0196/jetified-firebase-auth-21.0.4/AndroidManifest.xml:45:9-62:20
+235            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+235-->[com.google.firebase:firebase-auth:21.0.4] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/f3075ca5717f5a7e0f1da18bb60d0196/jetified-firebase-auth-21.0.4/AndroidManifest.xml:46:13-79
+236            android:excludeFromRecents="true"
+236-->[com.google.firebase:firebase-auth:21.0.4] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/f3075ca5717f5a7e0f1da18bb60d0196/jetified-firebase-auth-21.0.4/AndroidManifest.xml:47:13-46
+237            android:exported="true"
+237-->[com.google.firebase:firebase-auth:21.0.4] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/f3075ca5717f5a7e0f1da18bb60d0196/jetified-firebase-auth-21.0.4/AndroidManifest.xml:48:13-36
+238            android:launchMode="singleTask"
+238-->[com.google.firebase:firebase-auth:21.0.4] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/f3075ca5717f5a7e0f1da18bb60d0196/jetified-firebase-auth-21.0.4/AndroidManifest.xml:49:13-44
+239            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+239-->[com.google.firebase:firebase-auth:21.0.4] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/f3075ca5717f5a7e0f1da18bb60d0196/jetified-firebase-auth-21.0.4/AndroidManifest.xml:50:13-72
+240            <intent-filter>
+240-->[com.google.firebase:firebase-auth:21.0.4] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/f3075ca5717f5a7e0f1da18bb60d0196/jetified-firebase-auth-21.0.4/AndroidManifest.xml:51:13-61:29
+241                <action android:name="android.intent.action.VIEW" />
+241-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:44:16-68
+241-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:44:24-65
+242
+243                <category android:name="android.intent.category.DEFAULT" />
+243-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:45:16-75
+243-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:45:26-72
+244                <category android:name="android.intent.category.BROWSABLE" />
+244-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:46:16-77
+244-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:46:26-74
+245
+246                <data
+246-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:47:16-74
+247                    android:host="firebase.auth"
+248                    android:path="/"
+248-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:65:22-45
+249                    android:scheme="recaptcha" />
+249-->/Users/parkbyeongjun/StudioProjects/shepherd/android/app/src/main/AndroidManifest.xml:47:22-71
+250            </intent-filter>
+251        </activity>
+252        <activity android:name="com.facebook.CustomTabMainActivity" />
+252-->[com.facebook.android:facebook-common:13.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/93734b7b397a430db9b9c833c1d1c7fa/jetified-facebook-common-13.2.0/AndroidManifest.xml:34:9-71
+252-->[com.facebook.android:facebook-common:13.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/93734b7b397a430db9b9c833c1d1c7fa/jetified-facebook-common-13.2.0/AndroidManifest.xml:34:19-68
+253
+254        <provider
+254-->[com.google.firebase:firebase-common:20.1.1] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/0f67b2d2737c37bf1274c8f8df4996b1/jetified-firebase-common-20.1.1/AndroidManifest.xml:26:9-31:39
+255            android:name="com.google.firebase.provider.FirebaseInitProvider"
+255-->[com.google.firebase:firebase-common:20.1.1] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/0f67b2d2737c37bf1274c8f8df4996b1/jetified-firebase-common-20.1.1/AndroidManifest.xml:27:13-77
+256            android:authorities="com.pbj010dev.shepherd.firebaseinitprovider"
+256-->[com.google.firebase:firebase-common:20.1.1] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/0f67b2d2737c37bf1274c8f8df4996b1/jetified-firebase-common-20.1.1/AndroidManifest.xml:28:13-72
+257            android:directBootAware="true"
+257-->[com.google.firebase:firebase-common:20.1.1] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/0f67b2d2737c37bf1274c8f8df4996b1/jetified-firebase-common-20.1.1/AndroidManifest.xml:29:13-43
+258            android:exported="false"
+258-->[com.google.firebase:firebase-common:20.1.1] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/0f67b2d2737c37bf1274c8f8df4996b1/jetified-firebase-common-20.1.1/AndroidManifest.xml:30:13-37
+259            android:initOrder="100" />
+259-->[com.google.firebase:firebase-common:20.1.1] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/0f67b2d2737c37bf1274c8f8df4996b1/jetified-firebase-common-20.1.1/AndroidManifest.xml:31:13-36
+260
+261        <activity
+261-->[com.google.android.gms:play-services-auth:20.0.1] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/850ef13ec2cd7a7ea527ff79a705c18a/jetified-play-services-auth-20.0.1/AndroidManifest.xml:23:9-27:75
+262            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+262-->[com.google.android.gms:play-services-auth:20.0.1] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/850ef13ec2cd7a7ea527ff79a705c18a/jetified-play-services-auth-20.0.1/AndroidManifest.xml:24:13-93
+263            android:excludeFromRecents="true"
+263-->[com.google.android.gms:play-services-auth:20.0.1] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/850ef13ec2cd7a7ea527ff79a705c18a/jetified-play-services-auth-20.0.1/AndroidManifest.xml:25:13-46
+264            android:exported="false"
+264-->[com.google.android.gms:play-services-auth:20.0.1] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/850ef13ec2cd7a7ea527ff79a705c18a/jetified-play-services-auth-20.0.1/AndroidManifest.xml:26:13-37
+265            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+265-->[com.google.android.gms:play-services-auth:20.0.1] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/850ef13ec2cd7a7ea527ff79a705c18a/jetified-play-services-auth-20.0.1/AndroidManifest.xml:27:13-72
+266        <!--
+267            Service handling Google Sign-In user revocation. For apps that do not integrate with
+268            Google Sign-In, this service will never be started.
+269        -->
+270        <service
+270-->[com.google.android.gms:play-services-auth:20.0.1] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/850ef13ec2cd7a7ea527ff79a705c18a/jetified-play-services-auth-20.0.1/AndroidManifest.xml:33:9-37:51
+271            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+271-->[com.google.android.gms:play-services-auth:20.0.1] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/850ef13ec2cd7a7ea527ff79a705c18a/jetified-play-services-auth-20.0.1/AndroidManifest.xml:34:13-89
+272            android:exported="true"
+272-->[com.google.android.gms:play-services-auth:20.0.1] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/850ef13ec2cd7a7ea527ff79a705c18a/jetified-play-services-auth-20.0.1/AndroidManifest.xml:35:13-36
+273            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+273-->[com.google.android.gms:play-services-auth:20.0.1] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/850ef13ec2cd7a7ea527ff79a705c18a/jetified-play-services-auth-20.0.1/AndroidManifest.xml:36:13-107
+274            android:visibleToInstantApps="true" />
+274-->[com.google.android.gms:play-services-auth:20.0.1] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/850ef13ec2cd7a7ea527ff79a705c18a/jetified-play-services-auth-20.0.1/AndroidManifest.xml:37:13-48
+275
+276        <receiver
+276-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/3b1d1e5571522f703c316a9309413648/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:29:9-33:20
+277            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+277-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/3b1d1e5571522f703c316a9309413648/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:30:13-85
+278            android:enabled="true"
+278-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/3b1d1e5571522f703c316a9309413648/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:31:13-35
+279            android:exported="false" >
+279-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/3b1d1e5571522f703c316a9309413648/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:32:13-37
+280        </receiver>
+281
+282        <service
+282-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/3b1d1e5571522f703c316a9309413648/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:35:9-38:40
+283            android:name="com.google.android.gms.measurement.AppMeasurementService"
+283-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/3b1d1e5571522f703c316a9309413648/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:36:13-84
+284            android:enabled="true"
+284-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/3b1d1e5571522f703c316a9309413648/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:37:13-35
+285            android:exported="false" />
+285-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/3b1d1e5571522f703c316a9309413648/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:38:13-37
+286        <service
+286-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/3b1d1e5571522f703c316a9309413648/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:39:9-43:72
+287            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+287-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/3b1d1e5571522f703c316a9309413648/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:40:13-87
+288            android:enabled="true"
+288-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/3b1d1e5571522f703c316a9309413648/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:41:13-35
+289            android:exported="false"
+289-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/3b1d1e5571522f703c316a9309413648/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:42:13-37
+290            android:permission="android.permission.BIND_JOB_SERVICE" />
+290-->[com.google.android.gms:play-services-measurement:21.0.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/3b1d1e5571522f703c316a9309413648/jetified-play-services-measurement-21.0.0/AndroidManifest.xml:43:13-69
+291
+292        <activity
+292-->[com.google.android.gms:play-services-base:18.0.1] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/1c0769389455a4c14b7a50bc2530cb4a/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+293            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+293-->[com.google.android.gms:play-services-base:18.0.1] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/1c0769389455a4c14b7a50bc2530cb4a/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+294            android:exported="false"
+294-->[com.google.android.gms:play-services-base:18.0.1] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/1c0769389455a4c14b7a50bc2530cb4a/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+295            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+295-->[com.google.android.gms:play-services-base:18.0.1] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/1c0769389455a4c14b7a50bc2530cb4a/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+296
+297        <meta-data
+297-->[com.google.android.gms:play-services-basement:18.0.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/4a1e8147c3db656939cfc830651ce63e/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+298            android:name="com.google.android.gms.version"
+298-->[com.google.android.gms:play-services-basement:18.0.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/4a1e8147c3db656939cfc830651ce63e/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+299            android:value="@integer/google_play_services_version" />
+299-->[com.google.android.gms:play-services-basement:18.0.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/4a1e8147c3db656939cfc830651ce63e/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+300        <!--
+301         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+302         with the application context. This config is merged in with the host app's manifest,
+303         but there can only be one provider with the same authority activated at any given
+304         point; so if the end user has two or more different apps that use Facebook SDK, only the
+305         first one will be able to use the provider. To work around this problem, we use the
+306         following placeholder in the authority to identify each host application as if it was
+307         a completely different provider.
+308        -->
+309        <provider
+309-->[com.facebook.android:facebook-core:13.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/e66f5edf879419cce3a0c4ec03dc4435/jetified-facebook-core-13.2.0/AndroidManifest.xml:41:9-44:40
+310            android:name="com.facebook.internal.FacebookInitProvider"
+310-->[com.facebook.android:facebook-core:13.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/e66f5edf879419cce3a0c4ec03dc4435/jetified-facebook-core-13.2.0/AndroidManifest.xml:42:13-70
+311            android:authorities="com.pbj010dev.shepherd.FacebookInitProvider"
+311-->[com.facebook.android:facebook-core:13.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/e66f5edf879419cce3a0c4ec03dc4435/jetified-facebook-core-13.2.0/AndroidManifest.xml:43:13-72
+312            android:exported="false" />
+312-->[com.facebook.android:facebook-core:13.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/e66f5edf879419cce3a0c4ec03dc4435/jetified-facebook-core-13.2.0/AndroidManifest.xml:44:13-37
+313
+314        <receiver
+314-->[com.facebook.android:facebook-core:13.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/e66f5edf879419cce3a0c4ec03dc4435/jetified-facebook-core-13.2.0/AndroidManifest.xml:46:9-52:20
+315            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+315-->[com.facebook.android:facebook-core:13.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/e66f5edf879419cce3a0c4ec03dc4435/jetified-facebook-core-13.2.0/AndroidManifest.xml:47:13-86
+316            android:exported="false" >
+316-->[com.facebook.android:facebook-core:13.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/e66f5edf879419cce3a0c4ec03dc4435/jetified-facebook-core-13.2.0/AndroidManifest.xml:48:13-37
+317            <intent-filter>
+317-->[com.facebook.android:facebook-core:13.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/e66f5edf879419cce3a0c4ec03dc4435/jetified-facebook-core-13.2.0/AndroidManifest.xml:49:13-51:29
+318                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+318-->[com.facebook.android:facebook-core:13.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/e66f5edf879419cce3a0c4ec03dc4435/jetified-facebook-core-13.2.0/AndroidManifest.xml:50:17-95
+318-->[com.facebook.android:facebook-core:13.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/e66f5edf879419cce3a0c4ec03dc4435/jetified-facebook-core-13.2.0/AndroidManifest.xml:50:25-92
+319            </intent-filter>
+320        </receiver>
+321        <receiver
+321-->[com.facebook.android:facebook-core:13.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/e66f5edf879419cce3a0c4ec03dc4435/jetified-facebook-core-13.2.0/AndroidManifest.xml:53:9-59:20
+322            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
+322-->[com.facebook.android:facebook-core:13.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/e66f5edf879419cce3a0c4ec03dc4435/jetified-facebook-core-13.2.0/AndroidManifest.xml:54:13-118
+323            android:exported="false" >
+323-->[com.facebook.android:facebook-core:13.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/e66f5edf879419cce3a0c4ec03dc4435/jetified-facebook-core-13.2.0/AndroidManifest.xml:55:13-37
+324            <intent-filter>
+324-->[com.facebook.android:facebook-core:13.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/e66f5edf879419cce3a0c4ec03dc4435/jetified-facebook-core-13.2.0/AndroidManifest.xml:56:13-58:29
+325                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
+325-->[com.facebook.android:facebook-core:13.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/e66f5edf879419cce3a0c4ec03dc4435/jetified-facebook-core-13.2.0/AndroidManifest.xml:57:17-103
+325-->[com.facebook.android:facebook-core:13.2.0] /Users/parkbyeongjun/.gradle/caches/transforms-2/files-2.1/e66f5edf879419cce3a0c4ec03dc4435/jetified-facebook-core-13.2.0/AndroidManifest.xml:57:25-100
+326            </intent-filter>
+327        </receiver>
+328    </application>
+329
+330</manifest>

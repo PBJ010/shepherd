@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "891331476937",
+    "project_id": "com-health-shepherd",
+    "storage_bucket": "com-health-shepherd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891331476937:android:61d6bd77d7912049d23c18",
+        "android_client_info": {
+          "package_name": "com.pbj010dev.shepherd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "891331476937-u1p3crng6bkgr705om552d01i01t9rfh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6-8zfB2OA2NMfTqkZ4xRH2qFFJ5IjldM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "891331476937-u1p3crng6bkgr705om552d01i01t9rfh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "891331476937-gvt1pq302uhaa0hqqmofaqv2kflvfst6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pbj010dev.shepherd"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
